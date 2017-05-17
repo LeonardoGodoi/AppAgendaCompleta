@@ -40,52 +40,60 @@ public class PessoaDAOTest {
     }
 
     /**
-     * Test of incluir method, of class PessoaDAO.
+     * Teste de método getPessoa, da classe PessoaDAO.
      */
     @Test
     public void testIncluir() {
         System.out.println("incluir");
-        Pessoa pessoa = null;
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("JoaoTrinta");
+        pessoa.setEmail("jt@gmail.com");
+        pessoa.setEndereco("Rua Z, nº357, Braz");
+        pessoa.setTelefone("998855787");
         PessoaDAO instance = new PessoaDAO();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.incluir(pessoa);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of alterar method, of class PessoaDAO.
+     * Teste de método getPessoa, da classe PessoaDAO.
      */
     @Test
     public void testAlterar() {
         System.out.println("alterar");
-        Pessoa pessoa = null;
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("JoaoTrinta");
+        pessoa.setEmail("jt@gmail.com");
+        pessoa.setEndereco("Rua Z, nº357, Braz");
+        pessoa.setTelefone("998855787");
         PessoaDAO instance = new PessoaDAO();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.alterar(pessoa);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
-     * Test of excluir method, of class PessoaDAO.
+     * Teste de método getPessoa, da classe PessoaDAO.
      */
     @Test
     public void testExcluir() {
         System.out.println("excluir");
-        int id = 0;
+        int id = XXX;
+        pessoa.setNome("JoaoTrinta");
+        pessoa.setEmail("jt@gmail.com");
+        pessoa.setEndereco("Rua Z, nº357, Braz");
+        pessoa.setTelefone("998855787");
         PessoaDAO instance = new PessoaDAO();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.excluir(id);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
-     * Test of getPessoa method, of class PessoaDAO.
+     * Teste de método getPessoa, da classe PessoaDAO.
      */
     @Test
     public void testGetPessoa_int() {
@@ -95,12 +103,11 @@ public class PessoaDAOTest {
         Pessoa expResult = null;
         Pessoa result = instance.getPessoa(id);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
-     * Test of getPessoa method, of class PessoaDAO.
+     * Teste de método getPessoa, da classe PessoaDAO.
      */
     @Test
     public void testGetPessoa_0args() {
@@ -109,8 +116,7 @@ public class PessoaDAOTest {
         List<Pessoa> expResult = null;
         List<Pessoa> result = instance.getPessoa();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
